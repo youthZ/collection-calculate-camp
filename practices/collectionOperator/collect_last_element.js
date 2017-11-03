@@ -1,7 +1,10 @@
 'use strict';
 
-function collect_last_element(collection) {
-  //在这里写入代码
+function collect_all_even(collection) {
+	if(collection.length > 0){
+		
+		return collection[collection.length-1];
+	}
 }
 
-module.exports = collect_last_element;
+module.exports = collect_all_even;
