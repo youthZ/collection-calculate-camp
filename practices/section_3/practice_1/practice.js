@@ -1,5 +1,16 @@
-function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
+function create_updated_collection(collectionA, objectB) {
+  if(collectionA.length > 0 && typeof(objectB)=="object"){
+	 var lengthA = collectionA.length;
+	 var lengthB = objectB.value.length;
+	for(var indexA = 0; indexA < lengthA; indexA++){
+		for(var indexB = 0; indexB < lengthB; indexB++){
+			if(collectionA[indexA].key == objectB.value[indexB]){
+				collectionA[indexA].count -= 1;
+			}
+		}
+	}
+	return collectionA;
+  } 
 }
 
 module.exports = create_updated_collection;

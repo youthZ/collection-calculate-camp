@@ -1,7 +1,10 @@
 'use strict';
 
 function compute_average(collection) {
-  //在这里写入代码
+  var result = collection.reduce(function (pre, next){
+	return pre+next;
+  });
+    return parseFloat((result/collection.length).toFixed(1));
 }
 
 module.exports = compute_average;
