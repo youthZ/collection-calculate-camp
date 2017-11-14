@@ -38,9 +38,9 @@ function count_same_elements(collection) {
 		if(indexResult > 0){
 			while( indexTemp < indexResult){
 
-				if(collectionKey == result[indexTemp].key){
+				if(collectionKey == result[indexTemp].name){
 
-					result[indexTemp].count += count;
+					result[indexTemp].summary += count;
 
 					break;
 
@@ -56,15 +56,15 @@ function count_same_elements(collection) {
 
 				result[indexResult] = new Object();
 
-				result[indexResult].key = collectionKey;
+				result[indexResult].name = collectionKey;
 
-				result[indexResult].count = count;
+				result[indexResult].summary = count;
 
 			}	
 		}else{
 			result[indexResult] = new Object();
-			result[indexResult].key = collectionKey;
-			result[indexResult].count = count;
+			result[indexResult].name = collectionKey;
+			result[indexResult].summary = count;
 		}
 		return result;
 	}

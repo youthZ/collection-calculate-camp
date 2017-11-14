@@ -1,8 +1,12 @@
 'use strict';
 
 function amount_even(collection) {
-
-  //在这里写入代码
+	return collection.filter(function (e){
+		return e %2 == 0;
+	}).reduce(function (pre, next){
+		return pre + next;
+	});
+		
 }
 
 module.exports = amount_even;

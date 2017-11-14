@@ -1,5 +1,5 @@
 'use strict';
-function get_letter_interval_2(number_a, number_b) {
+function get_letter_interval(number_a, number_b) {
   var result = [];
 	var indexResult = 0;
 	  if(!isNaN(number_a) && !isNaN(number_b)){
@@ -34,9 +34,9 @@ function NumberToABC(number){
 		number = parseInt(number/26);
 	}
 	temp[tempIndex] = value[number];
-	for(let index = temp.length-1; index > 0 ; index--){
+	for(let index = temp.length-1; index >= 0 ; index--){
 		resultString +=temp[index]; 
 	}
 	return resultString;
 }
-module.exports = get_letter_interval_2;
+module.exports = get_letter_interval;

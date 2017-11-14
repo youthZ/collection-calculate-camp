@@ -1,4 +1,4 @@
-function create_updated_collection(collection_a, object_b) {
+function create_updated_collection(collectionA, objectB) {
   if(collectionA.length > 0){
 
 				var result=[];
